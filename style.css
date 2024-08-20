@@ -1,11 +1,32 @@
 :root{
-  --cor-fundo:#554B45;
-  --cor-destaque:#FF7324;
-  --cor-texto:#FFFFFF;
-  
+--cor-fundo: #554B45;
+--cor-destaque: #233BD5;
+--cor-texto: #FFFFFF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  background-color: var(--cor-fundo);
+   background-color: var(--cor-fundo) ;
   color: var(--cor-texto);
+}
+.apresentacao{
+  display: flex;
+  margin: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+strong{
+  color: var(--cor-destaque);
+}
+
+a{
+  
+}
+.foto{
+  height:490px;
 }
