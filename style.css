@@ -1,63 +1,71 @@
-:root{
---cor-fundo: #554B45;
---cor-destaque: #233BD5;
---cor-texto: #FFFFFF;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --cor-fundo:#993399;
+  --cor-destaque:#000000;
+   --cor-texto:#FFFFFF;
+}
 *{
   margin: 0;
-  padding: 0;
+  padding:0;
 }
-
 body{
-   background-color: var(--cor-fundo) ;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--cor-fundo);
   color: var(--cor-texto);
 }
 .apresentacao{
   display: flex;
-  margin: 10%;
+  margin: 10% 15%;
   align-items: center;
   justify-content: space-between;
 }
-
 .titulo__destaque{
   color: var(--cor-destaque);
 }
-
-.apresentacao__links__link{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+.apresentacao_links{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+gap:32px;
 }
 
-.apresentacao__links__link{
-width: 378px;
-border: 2px solid var(--cor-destaque);
-color: var(--cor-texto);
-font-size: 24px;
-text-decoration: none;
-padding: 21.5px;
-border-radius: 8px;
-text-align: center;
-font-weight: 600;
-font-family: 'Montserrat', sans-serif;
-
+.apresentacao_links_link{
+  width: 378px;
+  border: 2px solid var(--cor-destaque);
+  color: var(--cor-texto);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 21.5px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
-
 .foto{
-  height:490px;
-}
+  height: 490px;
 
+}
 .apresentacao__conteudo{
   width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.apresentacao__conteudo__titulo{
-  font-size: 36px;
-
+.apresentacao_conteudo_titulo{
+  
+  font-family:'Krona One','sans-serif';
+  font-size:36px
 }
-
-.apresentacao__conteudo__texto{
+.apresentacao_conteudo_texto{
   font-size: 24px;
+  font-family: 'Montserrat' , sans-serif;
+}
+.apresentacao_links{
+  display: flex;
 }
